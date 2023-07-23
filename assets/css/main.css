@@ -597,6 +597,14 @@ h6 {
   line-height: 0;
 }
 
+.about .content a {
+  color: #fff;
+}
+
+.about .content a:hover {
+  color: var(--color-primary);
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
