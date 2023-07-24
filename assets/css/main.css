@@ -69,10 +69,17 @@ h6 {
 
 /* Style the button used to pause/play the video */
 #myBtn {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
   width: 200px;
-  font-size: 18px;
   padding: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   border: none;
+  transition: 0.3s;
   background: #000;
   color: #fff;
   cursor: pointer;
@@ -81,6 +88,39 @@ h6 {
 #myBtn:hover {
   background: #ddd;
   color: black;
+}
+
+/* #myBtn1 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+} */
+
+
+#myBtn1 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  color: #fff;
+  background: var(--color-primary);
+}
+
+#myBtn1:hover {
+  background: #2cbc85;
 }
 
 
