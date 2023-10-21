@@ -25,6 +25,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -55,7 +57,13 @@
 
   <video autoplay muted loop id="myVideo">
     <source src="assets\video\Boomv1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
   </video>
 
   <div id="index_content">
@@ -85,6 +93,7 @@
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://vjs.zencdn.net/8.6.0/video.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
