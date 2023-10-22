@@ -26,6 +26,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Video -->
   <link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" />
 </head>
 
@@ -115,7 +116,19 @@
         btn.innerHTML = "Play";
       }
     }
-    </script>
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      // Code to execute for smartphones
+      var videoPlayer = videojs("myVideo");
+
+      // Adjust the video size for smaller screens
+      videoPlayer.width(320); // Adjust the width as needed
+      videoPlayer.height(180); // Adjust the height as needed
+    }
+</script>
+
+
+  </script>
 
 </body>
 
