@@ -1338,3 +1338,30 @@ h6 {
 .footer .credits a {
   color: var(--color-primary);
 }
+
+/* styles.css */
+.logo-bar {
+  overflow: hidden;
+}
+
+.logo-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  animation: move 30s linear infinite; /* Adjust the animation duration as needed */
+}
+
+.logo-bar li {
+  display: inline-block;
+  margin-right: 100px; /* Adjust the spacing between logos */
+}
+
+@keyframes move {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
