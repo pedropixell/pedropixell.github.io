@@ -1342,6 +1342,7 @@ h6 {
 /* logo-bar */
 .logo-bar {
   overflow: hidden;
+  position: relative;
 }
 
 .logo-bar ul {
@@ -1349,7 +1350,7 @@ h6 {
   padding: 0;
   margin: 0;
   white-space: nowrap;
-  animation: move 30s linear infinite; /* Adjust the animation duration as needed */
+  animation: move 75s linear infinite; /* Adjust the animation duration as needed */
 }
 
 .logo-bar li {
@@ -1359,9 +1360,31 @@ h6 {
 
 @keyframes move {
   0% {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
+}
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #27a776; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
