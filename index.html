@@ -1,140 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>PedroPixel</title>
-  <meta content="Welcome to my website where I show the fascinating world of artificial intelligence and its applications in art. As an AI enthusiast, I constantly push the boundaries of what's possible with this technology, especially in the realm of stable diffusion. Join me on this exciting journey as I create stunning and unique artworks using AI. Discover a wide range of videos showcasing my latest experiments in AI art." name="description">
-  <meta content="AI art, artificial intelligence, AI enthusiast, AI researcher, stable diffusion, AI, AI art techniques, art and technology, AI experiments, creative AI, AI-generated art, AI art exploration" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicons/android-chrome-512x512.png" rel="icon">
-  <link href="assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Video -->
-  <link href="https://vjs.zencdn.net/8.6.0/video-js.css" rel="stylesheet" />
-</head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LDB7E24NC9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LDB7E24NC9');
-</script>
-
-<body>
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <img src="assets/img/profile-img.jpg" alt="profile_pic">
-        <h1>PedroPixel</h1>
-      </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="https://www.youtube.com/@PedroPixell" class="youtube"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.tiktok.com/@pedropixell" class="tiktok"><i class="bi bi-tiktok"></i></a>
-        <a href="https://www.instagram.com/pedropixell/" class="instagram"><i class="bi bi-instagram"></i></a>
-      </div>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    </div>
-  </header>
-
-  <video autoplay muted loop id="myVideo">
-    <source src="assets\video\NBF_amsterdam.mp4" type="video/mp4" class="video-js" preload="auto">
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
-  </video>
-
-  <div id="index_content">
-    <h1>I'm PedroPixel an AI enthusiast</h1>
-    <p>Join me on this exciting journey as I create stunning and unique artworks using AI. Discover a wide range of videos showcasing my latest experiments in AI art.</p>
-    <a class="cta-btn" id="myBtn1" href="contact.html">Available for hire</a>
-    <button id="myBtn" onclick="myFunction()">Pause video</button>
-  </div>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy;pedropixell.github.io 2023
-      </div>
-      <div class="credits">Designed by PedroPixel</a>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="https://vjs.zencdn.net/8.6.0/video.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    // Get the video
-    var video = document.getElementById("myVideo");
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PedroPixel</title>
+    <meta content="Welcome to my website where I show the fascinating world of artificial intelligence and its applications in art. As an AI enthusiast, I constantly push the boundaries of what's possible with this technology, especially in the realm of stable diffusion. Join me on this exciting journey as I create stunning and unique artworks using AI. Discover a wide range of videos showcasing my latest experiments in AI art." name="description">
+    <meta content="AI art, artificial intelligence, AI enthusiast, AI researcher, stable diffusion, AI, AI art techniques, art and technology, AI experiments, creative AI, AI-generated art, AI art exploration" name="keywords">
+    <!-- Favicons -->
+    <link href="img/favicons/android-chrome-512x512.png" rel="icon">
+    <link href="img/favicons/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link href="css/styles.css?v=1.6" rel="stylesheet">
+    <link href="css/queries.css?v=1.6" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+              <h1 class="animated bounceInDown">I'm PedroPixel an AI enthusiast</h1>
+              <p class="animated fadeInUpDelay">Join me on this journey as I create stunning and unique artworks using AI.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-md-offset-5 text-center">
+              <a href="http://player.vimeo.com/video/889445795?title=0&amp;byline=0&amp;portrait=0&amp;color=1883ad&amp;autoplay=1" class="hero-play-btn various fancybox.iframe">Play Button</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <a href="#features" class="get-started-btn">Available for hire</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="download-now" id="getstarted">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 wp1">
+              <h1>Projects I have done so far:</h1>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=us0ScLgD4s4" target="_blank"><strong>Dr. Peacock & Hellcreator Untold Prophecy</strong></a></li>
+                <li><a href="https://boomchicago.nl/shows/amsterdamroasted/" target="_blank"><strong>Boom, Roasted!, Boom Chicago Amsterdam</strong></a></li>
+                <li><a href="https://www.nbforum.com/" target="_blank"><strong>Nordic Business Forum</strong></a></li>
+                <li><a href="https://www.abforum.nl" target="_blank"><strong>Amsterdam Business Forum</strong></a></li>
+                <li><a href="https://www.instagram.com/p/Cz_1CEzLSRx/" target="_blank"><strong>Ibiza Gold Cup</strong></a></li>
+                <li><a href="#"><strong>Coming Soon...</strong></a></li>
+              </ul>
+              <p>The experience of working on these projects was truly rewarding, especially when I witnest the client’s satisfaction with both the end results and the communication process. I consistently immerse myself in new projects, drawn to the opportunities they present.</p>
+              <p>I am continuously researching and exploring new techniques and styles because I strive for constant self-improvement and excellence in my work. I consider a project complete only when the customer is fully satisfied.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials" id="media">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div id="firstSlider">
+                <ul class="slides">
+                  <li>
+                    <div class="avatar"><img src="img/dr_ peacock.png" alt="Dr.peacock"></div><br>
+                  </li>
+                  <li>
+                    <div class="avatar"><img src="img/boom_chigago.png" alt="boom chigago"></div><br>
+                  </li>
+                  <li>
+                    <div class="avatar"><img src="img/nbforum.png" alt="nbforum"></div><br>
+                  </li>
+                  <li>
+                    <div class="avatar"><img src="img/amsterdam_business.png" alt="amsterdam business"></div><br>
+                  </li>
+                  <li>
+                    <div class="avatar"><img src="img/ibizagoldcup.png" alt="Ibiza Gold Cup"></div><br>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 features-leftcol wp2">
+              <h1>email</h1>
+              <a onclick="copyToClipboard()" class="instagram" style="font-size: 22px;"><i class="bi bi-envelope flex-shrink-0"></i></a>
+              <p class="margin-bottom">If you're interested in collaboration or have any other questions, please don't hesitate to send an email.</p>
+              <h1>instagram</h1>
+              <a href="https://www.instagram.com/pedropixell/" class="instagram" style="font-size: 22px;"><i class="bi bi-instagram"></i></a>
+              <p>Explore my latest artworks and techniques on my Instagram page, serving as a dynamic portfolio of my creative endeavors. Follow for updates and to stay in the loop with my artistic journey.</p>
+            </div>
+            <div class="col-md-6 features-rightcol wp3">
+              <h1>youtube</h1>
+              <a href="https://www.youtube.com/@PedroPixell" class="youtube" style="font-size: 22px;"><i class="bi bi-youtube"></i></a>
+              <p class="margin-bottom">Discover a variety of horizontal videos and shorts on my YouTube channel, mirroring the engaging content you find on Instagram.</p>
+              <h1>tiktok</h1>
+              <a href="https://www.tiktok.com/@pedropixell" class="tiktok" style="font-size: 22px;"><i class="bi bi-tiktok"></i></a>
+              <p>Discover my latest artwork on TikTok, mirroring the creative content you find on Instagram. Follow for regular updates and more artistic expressions!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>&copy;pedropixell.github.io 2023<br>pedropixel23@gmail.com</p>
+              <p class="footer-credit">Design by PedroPixel</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/jquery.fancybox.pack.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js?v=1.7"></script>
+      <script src="js/jquery.flexslider.js"></script>
+      <script src="js/jquery.smooth-scroll.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/waypoints.min.js"></script>
+      <script>
+        function copyToClipboard() {
+        // Get the text field
+          var copyText = "pedropixel23@gmail.com"
     
-    // Get the button
-    var btn = document.getElementById("myBtn");
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText);
     
-    // Pause and play the video, and change the button text
-    function myFunction() {
-      if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause video";
-      } else {
-        video.pause();
-        btn.innerHTML = "Play";
-      }
-    }
-
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      // Code to execute for smartphones
-      var videoPlayer = videojs("myVideo");
-
-      // Adjust the video size for smaller screens
-      videoPlayer.width(320); // Adjust the width as needed
-      videoPlayer.height(180); // Adjust the height as needed
-    }
-  </script>
-</body>
-</html>
+          // Alert the copied text
+          alert("Copied the text: " + copyText);
+          }
+      </script>
+    </body>
+  </html>
